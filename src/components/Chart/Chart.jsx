@@ -59,7 +59,9 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
 				title: { display: true, text: `Current state in ${country}` },
 			}}
 		/>
-	) : null;
+	) : (
+		<Spinner />
+	);
 
 	return <div className={styles.container}>{country ? barChart : lineChart}</div>;
 };

@@ -4,7 +4,6 @@ import { NativeSelect, FormControl } from '@material-ui/core';
 import { fetchCountries } from '../../api';
 
 import styles from './CountryPicker.module.css';
-import Spinner from '../Spinner/Spinner';
 
 const CountryPicker = ({ handleCountryChange }) => {
 	const [fetchedCountriesName, setFetchedCountriesName] = useState([]);
